@@ -1,0 +1,24 @@
+body {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.sidebar {
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+}
+
+.sidebar.show {
+  transform: translateX(0);
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    transform: none;
+    position: static;
+  }
+}
