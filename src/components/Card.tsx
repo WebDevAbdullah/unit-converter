@@ -33,17 +33,6 @@ const Card = () => {
     }
   }, [value, selectedUnit, selectedCategory, setResults]);
 
-  if (!selectedCategory) {
-    return (
-      <div className="card w-100">
-        <div className="card-body text-center">
-          <h5 className="card-title fw-semibold">Please Select a Category</h5>
-          <p className="text-secondary">Choose a measurement type from the sidebar to start converting</p>
-        </div>
-      </div>
-    );
-  }
-
   let units: string[] = [];
   if (selectedCategory && selectedCategory in conversionTables) {
     units = Object.keys(conversionTables[selectedCategory as AllCategories]);
