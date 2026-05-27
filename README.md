@@ -24,7 +24,7 @@ A modern, responsive unit converter web application built with React, TypeScript
 
 ## 🚀 Demo
 
-[Live Demo](https://WebDevAbdullah.github.io/unit-converter/)
+[Live Demo](https://devabdullah8.github.io/unit-converter/)
 
 ## 🛠️ Technologies Used
 
